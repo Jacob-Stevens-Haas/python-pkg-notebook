@@ -8,7 +8,9 @@ requires-python = ">=3.8"
 dev = [
   "pytest",
   "jupytext",
-  "sphinx~=5.0.0"
+  "sphinx~=5.0.0",
+  "nbsphinx",
+  "sphinxcontrib-apidoc",
 ]
 
 [build-system]
