@@ -1,0 +1,16 @@
+[project]
+name = "mypackage"
+version = "0.0.0"
+description = "Example of nbsphinx with different directory structure."
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "jupytext",
+  "sphinx~=5.0.0"
+]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
