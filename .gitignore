@@ -1,7 +1,8 @@
 env
 build
-doc/_build
-doc/api
+docs/_build
+docs/api
+docs/examples
 
 __pycache__
 .pytest_cache

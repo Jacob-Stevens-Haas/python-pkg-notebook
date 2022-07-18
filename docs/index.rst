@@ -10,7 +10,8 @@ Welcome to mypackage's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   mypackage <api/mypackage>
+   My Package <api/mypackage>
+   Examples <examples/index>
 
 Indices and tables
 ==================
