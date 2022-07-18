@@ -81,7 +81,10 @@ def setup(app):
     source_notebooks  = example_source.glob("**/*.ipynb")
     shutil.copy(example_source / "README.rst", doc_examples / "index.rst")
     for notebook in source_notebooks:
-        new_file = doc_examples / (notebook.parent.stem + ".ipynb")
+        # This part is specific to our notebook directory structure
+        new_dir = doc_examples / notebook.parent.stem
+        new_dir.mkdir(exist_ok=True)
+        new_file =  new_dir / "example.ipynb"
         print(f"Creating file {new_file}")
         shutil.copy(notebook, new_file)
     
